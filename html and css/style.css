@@ -1,0 +1,167 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: rgb(182, 142, 219);
+    color: rgb(27, 14, 14);
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: rgb(146, 76, 212);
+}
+nav.heading {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+ 
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+ 
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+ 
+nav ul li:hover {
+    background-color: rgb(171, 111, 228);
+}
+ 
+nav ul li a:hover {
+    color: white;
+}
+ 
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+ 
+/* responsive navbar css */
+@media screen and (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
+    }
+ 
+    nav .navbar {
+        display: none;
+    }
+ 
+    .sideNavigationBar {
+        display: block !important;
+    }
+}
+ 
+.sideNavigationBar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: rgb(139, 76, 197);
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+ 
+.sideNavigationBar a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+ 
+.sideNavigationBar a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:  rgb(139, 76, 197);
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+ 
+.sideNavigationBar a:hover {
+    color: white;
+}
+ 
+.sideNavigationBar .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+ 
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+ 
+.line .side1 {
+    padding-right: 50px;
+}
+ 
+.side1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color:  rgb(14, 9, 18);
+}
+ 
+.side1 button {
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: rgb(15, 16, 17);
+    font-size: 17px;
+    font-weight: 600;
+    background-color: blueviolet;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.side1 button:hover{
+    background-color:  rgb(135, 45, 133);
+    color: rgb(17, 12, 21);;
+}
+ 
+a {
+    text-decoration: none;
+    color: black;
+}
+ 
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+    .side2 img {
+        width: 800px;
+    }
+}
+ p {
+    letter-spacing: 3px;
+    font-size: large;
+}
+
+  
+ 
